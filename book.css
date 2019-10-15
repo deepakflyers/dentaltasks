@@ -1,0 +1,61 @@
+.mr-2 {
+    object-fit: cover;
+    border-radius: 50%;
+}
+.nav-item {
+    padding-left: 75px;
+}
+.navbar-header {
+    border-radius: 3px;
+    /* background-color: hotpink; */
+    padding-left: 0px;
+    float: left;
+    margin-left: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 21px;
+}
+.container-fluid {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.btn-user {
+    color: #fff;
+}
+
+body {
+    background-color: #c0c0c0;
+    font-family: sans-serif;
+    color: #3c3c3c;
+}
+.profile-card {
+    width: 775px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 2px 2px lightslategray;
+    position: relative;
+    top: 20px;
+    left: 0px;
+}  
+.content {
+    position: relative;
+    top: 5px;
+}
+.info {
+    color: #4b4fe2;
+    margin-right: 16px;
+}
+.top {
+    position: relative;
+    top: 10px;
+    left: 50px;
+}
+.hor {
+    width: 700px;
+    color: #000;
+}
+#numTwo {
+    height: 250px;
+}
+#headingS {
+    color: magenta;
+}

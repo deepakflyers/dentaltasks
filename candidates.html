@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <title>Find Candidates</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">Dental Care</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" id="findC" href="#">Find Candidates<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">My Bookings</a>
+                  </li>
+                </ul>
+                <div class="dropdown pmd-dropdown pmd-user-info ml-auto">
+                    <a href="#" class="btn-user dropdown-toggle media align-items-center" role="button" data-toggle="dropdown" data-sidebar="true" aria-expanded="false" aria-haspopup="true">
+                        <img class="mr-2" src="avatar-icon.jpg " width="40" height="40" alt="avatar">
+                        <div class="media-body">
+                            Kendra Saunders
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                        <a class="dropdown-item" href="#">My Profile</a>
+                        <a class="dropdown-item" href="#">Account Settings</a>
+                        <hr>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="heading">
+        <p>2 Candidate(s) match your search.</p>
+    </div>
+    <div class="sort">
+        <p><strong id="sort">SORT BY:</strong> Distance</p>
+    </div>
+    <div class="row no-gutters profile-card">  
+        <div class="col no-gutters image-container">
+            <img class="mr-3" src="male-avatar.jpg" alt="avatar" style="width: 95%" >
+        </div>
+        <div class="col no-gutters main-container">
+            <h4 class="content">Gary Oak</h4>
+            <p>Hygienist</p>
+            <p><i class="fa fa-comments-o info"></i> They say that I am the best there is at what I do.</p>
+            <p><i class="fa fa-envelope-o info"></i> Skills: CPR Certified, Calculus Removal</p>
+            <p><i class="fa fa-suitcase info"></i> Placement: Looking for Permanent</p>
+            <p><i class="fa fa-certificate info"></i> Certifications: CPR Certified, OHSA Certified</p>
+            <p><i class="fa fa-bus info"></i> Distance to Office: 12 miles</p>
+            <button class="btn btn-primary">Request Candidate</button>
+        </div>
+    </div>
+    <br>
+    <div class="row no-gutters profile-card">  
+        <div class="col no-gutters image-container">
+            <img class="mr-4" src="female-avatar.jpg" alt="avatar" style="width: 100%" >
+        </div>
+        <div class="col no-gutters main-container">
+            <h4 class="content">Tracy Neville</h4>
+            <p>Dental Assistant</p>
+            <p><i class="fa fa-comments-o info"></i> I love working with kids. My speciality is assisting dentists in a friendly and busy practice.</p>
+            <p><i class="fa fa-envelope-o info"></i> Skills: CPR, File Maintenance</p>
+            <p><i class="fa fa-suitcase info"></i> Placement: Temporary only</p>
+            <p><i class="fa fa-certificate info"></i> Certifications: OHSA Certified, CPR Certified</p>
+            <p><i class="fa fa-bus info"></i> Distance to Office: 2 miles</p>
+            <button class="btn btn-primary">Request Candidate</button>
+        </div>
+    </div>
+    <div class="row ">
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="quickSearch">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  Quick Search
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <div> Candidate Type:
+                            <input type="text" id="type" placeholder="Type" class="input1">
+                        </div>
+                        <br>
+                        <div> Available Date:
+                            <input type="date" id="availableDate" placeholder="Available Date" class="input2">
+                        </div>
+                        <br>
+                        <div> Distance to Office:
+                            <input type="number" id="distance" placeholder="(in Miles)" class="input3">
+                        </div>
+                        <br>
+                        <div> Skills:
+                            <input type="text" id="skills" placeholder="Skills" class="input4">
+                        </div>
+                        <br>
+                        <div> Certifications:
+                            <input type="text" id="cert" placeholder="Certifications" class="input5">
+                        </div>
+                        <br>
+                        <div>
+                            <button type="Submit" class="btn btn-success">Submit Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
